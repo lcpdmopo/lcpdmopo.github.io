@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership | Sentinel Intelligence Forum</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="membership">
+  <div id="site-header"></div><div id="page-hero"></div>
+  <main class="section">
+    <div class="container">
+      <div class="grid grid-4" id="membership-grid"></div>
+      <div class="page-grid" style="margin-top:28px" id="packages">
+        <section class="card"><div class="card-body"><h3>Corporate Membership Packages</h3><p>The public AFIO membership page presents four sponsorship levels with escalating benefits and visibility. This starter leaves the exact matrix configurable in content or CMS.</p><div class="notice">Bronze · Website listing · Employment assistance<br>Silver · Added event visibility · Multiple tickets<br>Gold · Member distributions · standard ads<br>Platinum · Premium event seating · larger advertising inventory</div></div></section>
+        <aside class="sidebar-card"><h3>Why this structure</h3><p>The membership page layout, categories, and sponsor-package framing were informed by AFIO’s public membership page.</p></aside>
+      </div>
+      <section class="section" id="apply" style="padding-bottom:0">
+        <div class="section-head"><div><h2>Apply / Renew</h2><p>Front-end demo form. Saves to localStorage so the site behaves like a working prototype without a backend.</p></div></div>
+        
+        <form id="join-form" class="card" style="margin-top:16px"><div class="card-body form-grid">
+          <div class="field"><label>Name</label><input name="name" required></div>
+          <div class="field"><label>Email</label><input type="email" name="email" required></div>
+          <div class="field"><label>Membership Type</label><select name="membership"><option>Member</option><option>UKUSA Member</option><option>Subscriber</option><option>Corporate</option></select></div>
+          <div class="field"><label>Organization</label><input name="organization"></div>
+          <div class="field full"><label>Notes</label><textarea name="notes" rows="5"></textarea></div>
+          <div class="full"><button class="btn btn-primary" type="submit">Submit Application</button></div>
+        </div></form>
+        <div id="join-notice" class="notice" style="margin-top:16px">No application submitted yet.</div>
+      </section>
+    </div>
+  </main>
+  <div id="site-footer"></div><script src="assets/js/data.js"></script><script src="assets/js/main.js"></script>
+</body>
+</html>
